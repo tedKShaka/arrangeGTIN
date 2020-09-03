@@ -1,17 +1,18 @@
 Arrange GTIN
 ==============
-Provide Average Sales sheet from quickbooks, this script will pair GTINs with SKUs, sort them by GTIN ascending, and produce new .xlsx with SKU and Quantity sold.
+Provided with Average Sales sheet from quickbooks, this script will pair GTINs with SKUs, sort them by GTIN ascending, and produce new .xlsx with SKU and Quantity sold.
 
  
  Usage
  --------------
-1. [Requires Python3](https://realpython.com/installing-python/)
-2. [Requires Numpy](https://numpy.org/install/)
-3. [Requires Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
+1. Requires [environment](https://docs.python.org/3/tutorial/venv.html) running for Python 3.7 and up, then ```$ pip install -r requirements.txt ```
 
-4. Provide an argument in the command line to target the excel file you need to reduce and sort:
+2. Run python script - provide script(GTINArrange.py) and argument(target excel file) on command line:
+```$ python [script] [argument]```
+
+Example: 
 ```
-$ python3 GTINArrange.py ./qkbooksaveragesalescalculator.xlsx
+$ python GTINArrange.py ./testQtys.xlsx
 
             GTIN      SKU  Quantity
 0   843105125366  CLS022X       6.0
