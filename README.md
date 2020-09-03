@@ -1,6 +1,7 @@
 Arrange GTIN
 ==============
- Reformatpace
+Provide Average Sales sheet from quickbooks, this script will pair GTINs with SKUs, sort them by GTIN ascending, and produce new .xlsx with SKU and Quantity sold.
+
  
  Usage
  --------------
@@ -8,7 +9,7 @@ Arrange GTIN
 2. [Requires Numpy](https://numpy.org/install/)
 3. [Requires Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
 
-4. Provide an argument in the command line to target the excel file you need to reduce to SKU's and Quantities only, sorted by ascending GTIN:
+4. Provide an argument in the command line to target the excel file you need to reduce and sort:
 ```
 $ python3 GTINArrange.py ./qkbooksaveragesalescalculator.xlsx
 
@@ -41,3 +42,4 @@ $ python3 GTINArrange.py ./qkbooksaveragesalescalculator.xlsx
 
 Sorting finished. Saving sheet in folder as sortedQtys.xlsx
 ```
+Resulting file will be sorted, and only has SKU and Quantity column.
